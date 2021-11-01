@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('layouts/header'); -%>
+
+<body>
+
+    <%- include('layouts/nav'); -%>
+
+    <main>
+
+        <form action="/user/signup" method="POST">
+            <input type="email" name="email" placeholder="Email">
+            <input type="password" name="pwd" placeholder="Password" id="">
+            <button type="submit">Sign Up</button>
+        </form>
+
+    </main>
+
+    <button onclick="history.back()">Go Back</button>
+
+    <%- include('layouts/scripts'); -%>
+
+</body>
+
+</html>
