@@ -3,6 +3,9 @@ const Schema = mongoose.Schema;
 
 const UserSchema = new Schema({
     email: String,
+    name: String,
+    country: String,
+    contact: String,
     pwd: String,
     dateJoined: {
         type: Date,

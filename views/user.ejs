@@ -10,8 +10,16 @@
     <main>
 
         <form action="/user/signup" method="POST">
-            <input type="email" name="email" placeholder="Email">
-            <input type="password" name="pwd" placeholder="Password" id="">
+            <label for="">Name</label>
+            <input type="text" name="name" class="email" placeholder="Name" required>
+            <label for="">Email</label>
+            <input type="email" name="email" class="email" placeholder="Email" required>
+            <label for="">Country</label>
+            <input type="text" name="country" class="email" placeholder="Country" required>
+            <label for="">Contact</label>
+            <input type="text" name="contact" class="email" placeholder="Contact" required>
+            <label for="">Password</label>
+            <input type="password" name="pwd" class="password" placeholder="Password" id="" required>
             <button type="submit">Sign Up</button>
         </form>
 

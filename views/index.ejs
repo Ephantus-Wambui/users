@@ -7,6 +7,62 @@
 
     <%- include('layouts/nav'); -%>
 
+    <main>
+
+        
+        <table>
+            
+            <tr>
+                
+                <th>Name</th>
+                <th>Email</th>
+                <th>Country</th>
+                <th>Contact</th>
+                
+            </tr>
+            
+            <% for (var i = 0; i < user.length; i++) {%>
+
+                <tr>
+
+                    <td><%= user[i].name %></td>
+                    <td><%= user[i].email %></td>
+                    <td><%= user[i].country %></td>
+                    <td><%= user[i].contact %></td>
+
+                </tr>
+
+            <% } %>
+
+            </table>
+
+            <table>
+            
+                <tr>
+                    
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Range</th>
+                    
+                </tr>
+                
+                <% for (var i = 0; i < input.length; i++) {%>
+    
+                    <tr>
+    
+                        <td><%= input[i].date %></td>
+                        <td><%= input[i].time %></td>
+                        <td><%= input[i].range %></td>
+    
+                    </tr>
+    
+                <% } %>
+    
+                </table>
+
+
+    </main>
+
     <button onclick="history.back()">Go Back</button>
 
     <%- include('layouts/scripts'); -%>
