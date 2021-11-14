@@ -25,10 +25,11 @@
 
                 <tr>
 
-                    <td><%= user[i].name %></td>
+                    <td><a href="/user/<%= user[i]._id %>"><%= user[i].name %></a></td>
                     <td><%= user[i].email %></td>
                     <td><%= user[i].country %></td>
                     <td><%= user[i].contact %></td>
+                    <td><a href="/update/<%= user[i]._id %>">Edit</a></td>
 
                 </tr>
 
